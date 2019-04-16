@@ -1,0 +1,127 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<style>
+*{
+	padding:0px;
+	margin:0px;
+}
+#main {
+	min-width:auto;
+  background-image: url("skylines route 66 roads Art Skyline HD Desktop Wallpaper.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+
+</style>
+
+
+
+<style>
+.button1{
+background-color: #80d4ff;}
+
+</style>
+<script type="text/javascript">
+function valid(){
+	var a,b,c,d,e,f;
+	a=f1.t1.value;
+	b=f1.t2.value;
+	c=f1.t3.value;
+	d=f1.t4.value;
+	e=f1.t5.value;
+
+	if(a==""){
+		alert("first name is empty");
+		f1.t1.focus();
+	}
+	else if(b==""){
+		alert("Last name is empty");
+		f1.t2.focus();
+	}
+	
+	else if(c==""){
+		alert("password is empty");
+		f1.t3.focus();
+	}
+        
+        else if(c.length<5){
+		alert("password strength is weak");
+		f1.t3.focus();
+	}
+   
+        else if(d==""){
+		alert("re-type password");
+		f1.t4.focus();
+	}
+        else if(c.length!=d.length)
+	{
+		alert("password mismatch");
+		f1.t4.focus();	
+	}
+	else if(c!=d)
+	{
+		alert("password not correct");
+		f1.t4.focus();
+	}
+        else if(e==""){
+		alert("please enter mobile no");
+		f1.t5.focus();
+	}
+	else if(e.length!=10)
+	{
+		alert("Enter a valid 10 digit no");
+		f1.t5.focus();	
+	}
+
+
+	else{
+		alert("submission successful");
+		f1.submit();
+	}
+	}
+
+</script>
+<div id="main" style="width:100%;height:100vh;">
+
+<h1><center>Create your account<center></h1>  
+
+
+
+
+
+
+
+
+<div id=container style="width:350px;height:500px; border:1px solid power blue;border-radius:10px;margin-left:35%; background-color:#e6ecff; margin-top:20px;">
+      <form action="ghhh" name=f1 method="post";>
+	  
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<table align="center" cellpadding=25px cellspacing=20px height=100% width=95% style="margin-left:0px;" >
+<tr ><td ><input type=text name=t1 size=40 placeholder="enter a firstname" style="position:absolute;height:30px; border-radius:8px;"></td></tr>
+<tr><td><input type=text name=t2 size=40 placeholder="enter a Lastname" style="position:absolute;height:30px; border-radius:8px;"></td></tr>
+<tr><td><input type=password name=t3 size=40 placeholder="enter a password                             ex:Abc@123" style="position:absolute;height:30px;  border-radius:8px;"></td></tr>
+<tr><td><input type=password name=t4 size=40 placeholder="confirm password" style="position:absolute;height:30px;  border-radius:8px;"></td></tr>
+<tr><td><input type=text name=t5 size=40 placeholder="enter a mobile number" style="position:absolute;height:30px;  border-radius:8px;"></td></tr>
+
+
+
+
+<table cellspacing=10px>
+<tr><td><input type=button value="sign up"  class=button1 onclick="valid()" style="position:absolute;height:30px; width:90px; border-radius:8px; margin-left:10px;"></tr>
+
+
+</table>
+</table>
+
+</form>
+</div>
+</div>
+</body>
+</html>
