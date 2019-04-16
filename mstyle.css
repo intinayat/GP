@@ -1,0 +1,5 @@
+#main > #container:hover{
+	width:352px;
+	height:202px;
+	background-color:red;
+}
